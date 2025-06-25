@@ -31,7 +31,7 @@ app.post('/updateuser', (req, res) => {
   });
 });
 
-app.post('/updateuser', (req, res) => {
+app.post('/deleteuser', (req, res) => {
   controller.deleteUser(req.body, (callack) => {
     res.send(callack);
   });
